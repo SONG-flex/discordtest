@@ -53,5 +53,5 @@ async def on_ready():
             await author.remove_roles(role)
 
 
-os.environ["TOKEN"]
+token=os.environ["TOKEN"]
 client.run(token)
