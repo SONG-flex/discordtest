@@ -1,8 +1,8 @@
 import discord
+import os
 
 
 
-token = "Njc0NTc0NTM2Mzg1MjMyODk2.XkLEXg.XHXWPs_WPREly7eipepJGxNWtSs"
 client = discord.Client()
 @client.event
 async def on_ready():
@@ -53,5 +53,5 @@ async def on_ready():
             await author.remove_roles(role)
 
 
-
+os.environ["TOKEN"]
 client.run(token)
