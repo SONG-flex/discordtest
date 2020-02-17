@@ -35,11 +35,11 @@ async def on_ready():
         elif message.content.startswith("!명령어"):
             await message.channel.send("<@{}> \n[할말]".format(id))
         
-        elif message.content.startswith("!역할"):
+        elif message.content.startswith("!인증"):
             author = message.author
-            role = discord.utils.get(message.guild.roles, name="인증완료")
+            role = discord.utils.get(message.guild.roles, name="💎국민💎")
             await author.add_roles(role)
-            await message.channel.send("<@{}> \n[안녕하세요.]".format(id))
+            await message.channel.send("<@{}> \n ``메테오 서버에 오신것을 환영합니다.``".format(id))
     
 
         if message.content.startswith("?뮤트"):
