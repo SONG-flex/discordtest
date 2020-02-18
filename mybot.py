@@ -9,7 +9,7 @@ async def on_ready():
     print(client.user.id)
     print(client.user.name)
     print("ready")
-    await client.change_presence(status=discord.Status.online, activity=discord.Game(name="테스트"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game(name="METEOR 서버"))
 
     @client.event
     async def on_message(message):
