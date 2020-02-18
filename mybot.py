@@ -14,8 +14,8 @@ async def on_ready():
     @client.event
     async def on_message(message):
         id = message.author.id
-        if message.content.startswith("안녕"):
-            await message.channel.send("<@{}> \n[안녕하세요]".format(id))
+        if message.content.startswith("???"):
+            await message.channel.send("<@{}> \n에베베베ㅔㅂ".format(id))
 
         elif message.content.startswith("?도우미"):
             await message.channel.send("<@{}> \n> 도우미를 호출하셨습니다.".format(id))
@@ -37,7 +37,7 @@ async def on_ready():
         
         elif message.content.startswith("!인증"):
             author = message.author
-            role = discord.utils.get(message.guild.roles, name="💎국민💎")
+            role = discord.utils.get(message.guild.roles, name="[ _ 국민 _ ]")
             await author.add_roles(role)
             await message.channel.send("<@{}> \n ``메테오 서버에 오신것을 환영합니다.``".format(id))
     
