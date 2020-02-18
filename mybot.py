@@ -37,7 +37,7 @@ async def on_ready():
         
         elif message.content.startswith("!인증"):
             author = message.author
-            role = discord.utils.get(message.guild.roles, name="[ _ 국민 _ ]")
+            role = discord.utils.get(message.guild.roles, name="💎국민💎")
             await author.add_roles(role)
             await message.channel.send("<@{}> \n ``메테오 서버에 오신것을 환영합니다.``".format(id))
     
